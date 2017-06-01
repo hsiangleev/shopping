@@ -1,0 +1,233 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>my shopping</title>
+<link rel="stylesheet" href="icomoon/style.css" >
+<link rel="icon" href="favicon.ico" >
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	body{
+		background: url(images/bground5.jpg) no-repeat;
+		background-size:cover;
+	}
+	a{
+		text-decoration: none;
+		display: inline-block;
+		color: green;
+		margin-top: 10px;
+		background-color: rgba(100, 240, 120, 0.6);
+		border-radius: 10px;
+		width: 40px;
+		width: 80px;
+		text-align: center;
+		line-height: 40px;
+	}
+	form{
+		width: 324px;
+		height: 167px;
+		margin: 160px auto;          /* 去掉表单边框线  */
+		border: 1px solid #ddd;
+		background: rgba(210,210,210,0.2);
+		position:relative;
+		border-radius: 10px;
+		animation: m1 3s ease 0s alternate none;
+	}
+	@keyframes m1{
+	0%{
+		transform:scale(0);
+	}
+	100%{
+		transform:scale(1);
+	}
+}
+	input.tp{
+		width: 170px;
+		height: 23px;
+		outline-style: none;
+	}
+	input.sr{
+		width: 66px;
+		height: 28px;
+		outline-style: none;     /* 去掉表单边框线  */
+		border-radius: 8px;
+		box-shadow: #44e370 1px 1px;
+		background: #54F470;
+		color: #666;
+		font:400 16px/24px "microsoft yahei";
+	}
+
+	input:nth-of-type(1){
+		position:absolute;
+		top: 35px;
+		left:71px;
+	}
+	input:nth-of-type(2){
+		position:absolute;
+		top: 77px;
+		left:71px;
+	}
+	input:nth-of-type(3){
+		position:absolute;
+		top: 119px;
+		left:71px;
+	}
+	input:nth-of-type(4){
+		position:absolute;
+		top: 119px;
+		left:162px;
+	}
+	span{
+		width: 33px;
+		height: 33px;
+		position:absolute;
+		left: 35px;
+		font: bold;
+	}
+	span:nth-of-type(1){
+		top: 38px;
+	}
+	span:nth-of-type(2){
+		top:80px;
+	}
+	h3{
+		position: absolute;
+		top:-30px;
+		left:100px;
+		color: #333;
+	}
+	ul{
+		list-style: none;
+		width: 150px;
+		height: 25px;
+		position: absolute;
+		bottom: -40px;
+		left:90px;
+	}
+	li{
+		float: left;
+		width: 20px;
+		height: 20px;
+		background:#71FD5B;
+		border-radius: 50%;
+	}
+	li:nth-of-type(1){
+		animation: m2 1.5s linear infinite none;
+	}
+	li:nth-of-type(6){
+		animation: m3 1.5s linear infinite none;
+	}
+	@keyframes m2{
+		0%{
+			transform: translate(0px);
+		}
+		50%{
+			transform: translate(0px);
+		}
+		60%{
+			transform: translate(-10px);
+		}
+		70%{
+			transform: translate(-20px);
+		}
+		80%{
+			transform: translate(-30px);
+		}
+		90%{
+			transform: translate(-20px);
+		}
+		95%{
+			transform: translate(-10px);
+		}
+		100%{
+			transform: translate(0px);
+		}
+	}
+	@keyframes m3{
+		0%{
+			transform: translate(0px);
+		}
+		10%{
+			transform: translate(10px);
+		}
+		20%{
+			transform: translate(20px);
+		}
+		30%{
+			transform: translate(30px);
+		}
+		40%{
+			transform: translate(20px);
+		}
+		45%{
+			transform: translate(10px);
+		}
+		50%{
+			transform: translate(0px);
+		}
+		100%{
+			transform: translate(0px);
+		}
+	}
+</style>
+</head>
+
+<body>
+	
+	<a href="index.html">返回商城</a>
+	<a href="register.html">点击注册</a>
+
+	<form action="info/login.php" method="POST">
+		<h3>用户登录</h3>
+		<input type="text" class="tp" placeholder="请输入用户名" name="username" />
+ 		<input type="password" class="tp" placeholder="请输入密码" name="password" />
+		<input type="submit" class="sr" value="登陆"/>
+		<input type="reset" class="sr"  value="重置"/>
+		<span class="icon-users"></span>
+		<span class="icon-lock"></span>
+		
+		<ul>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</form>
+	
+<!-- <script>
+	var oInput=document.getElementsByTagName("input");
+	
+	
+	oInput[0].onfocus=function(){
+		if(this.value==="admin"){
+			this.value="";
+			this.style.color="#000";
+		}
+	}
+	oInput[1].onfocus=function(){
+		if(this.value==="123456"){
+			this.value="";
+			this.style.color="#000";
+		}
+	}
+	oInput[0].onblur=function(){
+		if(this.value===""){
+			this.value="admin";
+			this.style.color="#bbb";
+		}
+	}
+	oInput[1].onblur=function(){
+		if(this.value===""){
+			this.value="123456";
+			this.style.color="#bbb";
+		}
+	}
+	
+</script> -->
+</body>
+</html>

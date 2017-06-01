@@ -1,0 +1,384 @@
+
+.upDowm{
+	position: fixed;
+	right: 100px;
+	bottom: 100px;
+	cursor: pointer;
+}
+.upDowm img{
+	height: 100px;
+}
+
+/* header-nav 开始  */
+.header-nav{
+	height: 32px;
+	line-height: 32px;
+	background: #f5f5f5;
+}
+.header-nav-left{
+	float: left;
+}
+.header-nav-right{
+	float: right;
+}
+.header-nav-right p{
+	display: inline-block;
+}
+.header-nav-right button{
+	height: 20px;
+	color: #fff;
+	padding: 0 15px;
+	cursor: pointer;
+}
+.header-nav-right button:nth-of-type(1){
+	background-image: linear-gradient(to bottom,#88cffa,#2da7f2);
+}
+.header-nav-right button:nth-of-type(2){
+	background-image: linear-gradient(to bottom,#ffb6bb,#ff586a);
+}
+	/* header-nav 结束  */
+
+
+	/* top-banner 开始  */
+.top-banner{
+	height: 81px;
+	width: 100%;
+	line-height: 81px;
+	background-color: #e84637;
+}
+.top-banner .w{
+	position: relative;
+}
+.top-banner .w img{
+	width: 100%;
+	height: 80px;
+}
+.top-banner span{
+	width: 19px;
+	height: 19px;
+	position: absolute;
+	top:0;
+	right: 0;
+	cursor: pointer;
+	background: url("../images/close-banner.png") no-repeat;
+}
+.top-banner span:hover{
+	background: url("../images/close-banner.png") no-repeat 0 -19px;
+}
+	/* top-banner 结束  */
+
+
+	/* search开始  */
+
+.search-left{
+	float: left;
+	width: 365px;
+	height:85px;
+	margin-top: 15px;
+}
+.search-cen{
+	float: left;
+	height:100px;
+	width: 550px;
+	position: relative;
+}
+.search-cen input[type=text]{
+	width: 455px;
+	height: 35px;
+	position: absolute;
+	bottom: 30px;
+	left: 0;
+	font: 400 18px/30px "Microsoft Yahei";
+	border: 3px solid #b61d1d;
+}
+.search-cen input[type=button]{
+	width: 82px;
+	height: 41px;
+	position: absolute;
+	bottom: 30px;
+	left: 460px;
+	color: #fff;
+	font-size: 16px;
+	cursor: pointer;
+	background: #b61d1d;
+	border: 3px solid #b61d1d;
+}
+.search-right{
+	float: right;
+	height:35px;
+	width: 142px;
+	line-height: 35px;
+	position: relative;
+	margin-top: 30px;
+	border: 1px solid #dfdfdf;
+	background: #f9f9f9;
+}
+.search-right p{
+	position: absolute;
+	left: 45px;
+}
+.search-right span{
+	position: absolute;
+	left: 19px;
+	top: 10px;
+	width: 19px;
+	height: 19px;
+	background: url("../images/tel.png") no-repeat 0 -58px;
+}
+.search-right i{
+	position: absolute;
+	right: 10px;
+}
+.search-right s{
+	position: absolute;
+	top: -10px;
+	right: 20px;
+	width: 20px;
+	height: 20px;
+	background: #c81623;
+	line-height: 20px;
+	text-align: center;
+	color: #fff;
+	border-radius: 50% 50% 50% 10%;
+}
+	/* search 结束  */
+
+	/* nav开始  */
+.nav{
+	border-bottom: 2px solid #c71521;
+	line-height: 46px;
+}
+
+.nav-left{
+	background: #c71521;
+	width: 235px;
+	height: 46px;
+	color: #f3f3f3;
+	text-align: center;
+	font: 500 20px/46px "Microsoft Yahei";
+	float: left;
+}
+.nav-cen a{
+	width: 150px;
+	height: 46px;
+	float: left;
+	text-align: center;
+	font: 600 18px/46px "microsoft yahei";
+}
+	/* nav 结束  */
+
+	/* container开始  */
+.container-img{
+	width: 960px;
+	height: 352px;
+	float: left;
+	overflow: hidden;
+	position: relative;
+}
+.container-img-img{
+	width: 502%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+}
+.container-img-img img{
+	width: 960px;
+	height: 100%;
+	float: left;
+}
+.container-img-box{
+	width: 100%;
+	height: 46px;
+}
+.container-img-box ul{
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	margin-left: -88px;
+}
+.container-img-box li{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	text-align: center;
+	font: 500 22px/40px "Microsoft Yahei";
+	background-color: #50BCF8;
+	cursor: pointer;
+}
+.container-img .container-img-lr{
+	width: 960px;
+	height: 60px;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	margin-top: -30px;
+	display: none;
+}
+.container-img span{
+	width: 60px;
+	height: 60px;
+	float: left;
+	text-align: center;
+	cursor: pointer;
+	font: 500 26px/60px "Microsoft Yahei";
+	background-color: #50BCF8;
+}
+.container-img span:nth-child(2){
+	float: right;
+}
+.container-right{
+	width: 236px;
+	height: 352px;
+	float: right;
+	font-size: 16px;
+	border: 1px solid #0c0;
+}
+.container-right-news{
+	height: 34px;
+	line-height: 34px;
+	background: #edf7ff;
+}
+.container-right-news span{
+	display: inline-block;
+	width: 80px;
+	color: #fcadb3;
+	padding: 0 5px 0 5px;
+	border-right: 1px solid #ccc;
+}
+.container-right-news p{
+	display: inline-block;
+	width: 90px;
+	color: #a9d6fd;
+	margin-left: 10px;
+}
+.container-img-box li.current{
+	background-color: #F77476;
+}
+	/* container 结束  */
+
+	/* myPhone 开始  */
+	
+.myPhone .myPhone-icon{
+	background: url("../images/myphone.jpg") repeat-x;
+	height: 40px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 40px;
+	border: 1px solid #0c0;
+	margin-top: 15px;
+}
+.myPhone .myPhone-shop-left{
+	width: 591px;
+	height: 480px;
+	outline: 1px solid #0c0;
+	float: left;
+}
+.myPhone .myPhone-shop-right{
+	width: 591px;
+	height: 480px;
+	outline: 1px solid #0c0;
+	float: right;
+}
+.myPhone .myPhone-shop-top{
+	width:100%;
+	height: 60px;
+	background-color: #36A7A5;
+
+}
+.myPhone .myPhone-shop-box{
+	border: 1px solid #ddd;
+	width:160px;
+	float: left;
+	margin:17px;
+	height: 180px;
+}
+.myPhone .myPhone-shop-box p{
+	text-align: center;
+}
+.myPhone .myPhone-shop-box p:nth-child(3){
+	font-size:20px;
+	color: #FFAC76;
+}
+.myPhone .myPhone-shop-box img{
+	display: inline-block;
+	width: 100px;
+	margin-left: 20px;
+	box-sizing: border-box;
+	height: 120px;
+}
+	/* myIcon开始   */
+.myIcon{
+	width: 100%;
+	height: 54px;
+    padding: 20px 0;
+    margin: 20px 0;
+    background: #f1f1f1;
+    text-align: center;
+}
+.myIcon .myIcon-img{
+	width: 220px;
+	height: 100%;
+	float: left;
+	margin: 0 3%;
+	background: url("../images/duo.png") no-repeat;
+}
+.myIcon .myIcon-img:nth-child(2){
+	background: url("../images/kuai.png") no-repeat;
+}
+.myIcon .myIcon-img:nth-child(3){
+	background: url("../images/hao.png") no-repeat;
+}
+.myIcon .myIcon-img:nth-child(4){
+	background: url("../images/sheng.png") no-repeat;
+}
+
+	/* myIcon 结束  */
+
+
+
+	/* footer 开始  */
+.footer{
+	width: 100%;
+	height: 120px;
+	padding-top: 50px;
+	background-color: #eee;
+}
+.footer ul{
+	width: 100%;
+	box-sizing: border-box;
+	margin: 10px 0;
+}
+.footer ul li{
+	float: left;
+	font-size: 12px;
+	border-right: 1px solid #aaa;
+}
+.footer ul.aboutUs{
+	padding-left: 68px;
+}
+.footer ul.aboutUs li{
+	color: #666;
+	padding: 0 10px;
+}
+.footer ul.id{
+	padding-left: 216px;
+}
+.footer ul.id li{
+	color: #aaa;
+	padding: 0 10px;
+}
+.footer ul.phone{
+	padding-left: 172px;
+}
+.footer ul.phone li{
+	color: #aaa;
+	padding: 0 10px;
+}
+.footer ul li:last-child{
+	border-right: none;
+}
+
+
+
+	/* footer 结束  */

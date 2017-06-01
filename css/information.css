@@ -1,0 +1,283 @@
+/* header-nav 开始  */
+body{
+	background-color: #fff;
+}
+.header-nav{
+	height: 32px;
+	line-height: 32px;
+	background: #f5f5f5;
+}
+.header-nav-left{
+	float: left;
+}
+.header-nav-right{
+	float: right;
+}
+.header-nav-right p{
+	display: inline-block;
+}
+.header-nav-right button{
+	width: 51px;
+	height: 20px;
+	color: #fff;
+	cursor: pointer;
+}
+.header-nav-right button:nth-of-type(1){
+	background-image: linear-gradient(to bottom,#88cffa,#2da7f2);
+}
+.header-nav-right button:nth-of-type(2){
+	background-image: linear-gradient(to bottom,#ffb6bb,#ff586a);
+}
+	/* header-nav 结束  */
+
+
+	/* top-banner 开始  */
+.top-banner{
+	height: 81px;
+	width: 100%;
+	line-height: 81px;
+	background-color: #e84637;
+}
+.top-banner .w{
+	position: relative;
+}
+.top-banner .w img{
+	width: 100%;
+	height: 80px;
+}
+.top-banner span{
+	width: 19px;
+	height: 19px;
+	position: absolute;
+	top:0;
+	right: 0;
+	cursor: pointer;
+	background: url("../images/close-banner.png") no-repeat;
+}
+.top-banner span:hover{
+	background: url("../images/close-banner.png") no-repeat 0 -19px;
+}
+	/* top-banner 结束  */
+
+/* nav开始  */
+.nav{
+	margin-top: 50px;
+	border-bottom: 2px solid #c71521;
+	line-height: 46px;
+}
+
+.nav-left{
+	background: #c71521;
+	width: 235px;
+	height: 46px;
+	color: #f3f3f3;
+	text-align: center;
+	font: 500 20px/46px "Microsoft Yahei";
+	float: left;
+}
+.nav-cen a{
+	width: 150px;
+	height: 46px;
+	float: left;
+	text-align: center;
+	font: 600 18px/46px "microsoft yahei";
+}
+	/* nav 结束  */
+
+	/* container 开始  */
+.container{
+	margin-top: 20px;
+	width: 100%;
+	position: relative;
+}
+.container-left{
+	width: 300px;
+	border: 1px solid #ddd;
+	position: absolute;
+	left: 0;
+}
+#img1{
+	display: block;
+	width: 300px;
+	height: 300px;
+}
+.mask{
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	cursor: move;
+	display: none;
+	background-color: rgba(180,50,20,0.3);
+}
+.big{
+	width: 400px;
+	height: 400px;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 310px;
+	z-index: 2;
+	display: none;
+	border: 1px solid #ccc;
+}
+
+
+.container-word{
+	width: 600px;
+	position: absolute;
+	left: 301px;
+	padding: 10px;
+	border: 1px solid #aaa;
+}
+.container-word h1{
+	width: 100%;
+	display: block;
+	height: 50px;
+	font-weight: 800;
+	font-size: 20px;
+	line-height: 50px;
+	color: rgba(200, 0, 0, 0.8);
+	text-align: center;
+}
+.container-word h2{
+	width: 100%;
+	height: 50px;
+	color: #999;
+}
+.container-word span{
+	margin: 10px 0;
+	width: 100%;
+	height: 60px;
+	display: block;
+	background-color: #FFF2E8;
+}
+.container-word span h3{
+	width: 100%;
+	display: block;
+	height: 60px;
+	font-weight: 800;
+	font-size: 30px;
+	line-height: 60px;
+	color: rgba(200, 0, 0, 0.8);
+	text-align: center;
+}
+/* dl */
+.container-word .phoneColor{
+	width: 100%;
+	height: 60px;
+}
+.container-word .phoneColor dt{
+	height: 40px;
+	width: 70px;
+	line-height: 40px;
+	float: left;
+}
+.container-word .phoneColor dd{
+	float: left;
+}
+.container-word .phoneColor ul{
+	display: inline-block;
+}
+.container-word .phoneColor ul li,
+.container .container-word-num button{
+	float: left;
+	height: 40px;
+	line-height: 40px;
+	margin: 0 5px;
+	padding: 0 15px;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	cursor: pointer;
+}
+.container .container-word button{
+	margin: 0;
+}
+.container-word .phoneColor ul li.current{
+	border: 2px solid #a00;
+}
+.container .container-word .container-word-num{
+	width: 100%;
+}
+.container .container-word-num i{
+	float: left;
+	height: 40px;
+	line-height: 40px;
+	margin: 0 5px;
+	padding: 0 15px;
+}
+.container .container-word-buy{
+	width: 100%;
+	margin-top: 50px;
+	box-sizing: border-box;
+	padding: 0 120px;
+}
+.container .container-word-buy button{
+	float: left;
+	height: 50px;
+	line-height: 50px;
+	margin: 0 30px;
+	padding: 0 15px;
+	cursor: pointer;
+	background-color: #FFE4D0;
+	color: #E5511D;
+	border-radius: 10px;
+}
+.container .container-word-buy button:last-child{
+	background-color: #F40;
+	color: #fff;
+}
+.container .container-img{
+	float: right;
+
+}
+	/* top-banner 结束 */
+
+
+
+/* footer 开始  */
+.footer{
+	width: 100%;
+	height: 120px;
+	padding-top: 50px;
+	background-color: #eee;
+}
+.footer ul{
+	width: 100%;
+	box-sizing: border-box;
+	margin: 10px 0;
+}
+.footer ul li{
+	float: left;
+	font-size: 12px;
+	border-right: 1px solid #aaa;
+}
+.footer ul.aboutUs{
+	padding-left: 68px;
+}
+.footer ul.aboutUs li{
+	color: #666;
+	padding: 0 10px;
+}
+.footer ul.id{
+	padding-left: 216px;
+}
+.footer ul.id li{
+	color: #aaa;
+	padding: 0 10px;
+}
+.footer ul.phone{
+	padding-left: 172px;
+}
+.footer ul.phone li{
+	color: #aaa;
+	padding: 0 10px;
+}
+.footer ul li:last-child{
+	border-right: none;
+}
+
+
+
+	/* footer 结束  */

@@ -1,0 +1,134 @@
+[
+  {
+    "url":"images/huaweiv9.jpg",
+    "text":"华为v9",
+    "price":"¥2899"
+  },
+  {
+    "url":"images/rongyao8.jpg",
+    "text":"华为 荣耀8 青春版",
+    "price":"¥1548"
+  },
+  {
+    "url":"images/huaweip9.jpg",
+    "text":"华为 荣耀6x",
+    "price":"¥1299"
+  },
+  {
+    "url":"images/huawei6a.jpg",
+    "text":"华为 畅玩6a",
+    "price":"¥899"
+  },
+  {
+    "url":"images/huawei6x.jpg",
+    "text":"华为 p9",
+    "price":"¥2499"
+  },
+  {
+    "url":"images/huaweimate9.jpg",
+    "text":"华为 mate9",
+    "price":"¥4499"
+  },
+
+
+  {
+    "url":"images/iphone6.jpg",
+    "text":"iphone6",
+    "price":"¥3666"
+  },
+  {
+   "url":"images/iphone6s.jpg",
+    "text":"iphone6s puls",
+    "price":"¥5199"
+  },
+  {
+    "url":"images/iphone6p.jpg",
+    "text":"iphone6 puls",
+    "price":"¥3488"
+  },
+  {
+    "url":"images/iphone7.jpg",
+    "text":"iphone7",
+    "price":"¥5699"
+  },
+  {
+    "url":"images/iphone7plus.jpg",
+    "text":"iphone7plus",
+    "price":"¥5748"
+  },
+  {
+    "url":"images/iphone5s.jpg",
+    "text":"iphone5s",
+    "price":"¥1699"
+  },
+	
+	
+	
+	
+	
+	{
+    "url":"images/oppor9s.jpg",
+    "text":"oppo r9s",
+    "price":"¥2599"
+  },
+  {
+    "url":"images/oppor9splus.jpg",
+    "text":"oppo r9s plus",
+    "price":"¥3499"
+  },
+  {
+    "url":"images/OPPOA57.jpg",
+    "text":"oppo A57",
+    "price":"¥1599"
+  },
+  {
+    "url":"images/OPPOA59s.jpg",
+    "text":"oppo A59s",
+    "price":"¥1999"
+  },
+  {
+    "url":"images/OPPOA37.jpg",
+    "text":"oppo A37",
+    "price":"¥1199"
+  },
+  {
+    "url":"images/oppor11.jpg",
+    "text":"oppo r11",
+    "price":"未知"
+  },
+	
+	
+	
+	
+	{
+    "url":"images/xiaomimax.jpg",
+    "text":"小米max 2   4g手机",
+    "price":"¥1999"
+  },
+  {
+    "url":"images/xiaominote4x.jpg",
+    "text":"小米note 4x   4g手机",
+    "price":"¥799"
+  },
+  {
+    "url":"images/xiaomi4a.jpg",
+    "text":"小米4a  4g手机",
+    "price":"¥599"
+  },
+  {
+    "url":"images/hongmi4x.jpg",
+    "text":"小米 红米4x 4g手机",
+    "price":"¥699"
+  },
+  {
+    "url":"images/xiaomi6.jpg",
+    "text":"小米 6 4g手机",
+    "price":"¥2899"
+  },
+  {
+    "url":"images/xiaomi5.jpg",
+    "text":"小米5 4g手机",
+    "price":"¥1699"
+  }
+  
+]

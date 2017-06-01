@@ -1,0 +1,262 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>my shopping</title>
+	<link href="css/base.css" rel="stylesheet">
+	<link href="css/index.css" rel="stylesheet">
+	<link rel="icon" href="favicon.ico" >
+	<script src="js/jquery-3.2.0.min.js"></script>
+	<script src="js/template-native.js"></script>
+	<script src="js/index.js"></script>
+	<script src="js/base.js"></script>
+	<script type="text/template" id="template">
+		<% for(var i=0;i<souse.length;i++){%>
+			<div class="myPhone-shop-box">
+				<a href="javascript:void(0);"><img src="<%=souse[i].url%>"></a>
+				<a href="javascript:void(0);"><p><%=souse[i].text%></p></a>
+				<p><%=souse[i].price%></p>
+			</div>
+		<%}%>
+	</script>
+	<script src="js/setVal.js"></script>
+</head>
+
+<body>
+
+	<!-- header-nav 开始       -->
+	<div class="header-nav">
+		<div class="w">
+			<div class="header-nav-left">
+				
+			</div>
+			<div class="header-nav-right">
+				<p>欢迎光临本店！</p>
+				<a href=""><button></button></a>
+				<a href=""><button></button></a>
+			</div>
+			
+		</div>
+	</div>
+	<!-- header-nav 结束       -->
+
+
+	<!-- top-banner 开始       -->
+	<div class="top-banner">
+		<div class="w">
+			<a href="#"><img src="images/top-banner.jpg"></a>
+			<span></span>
+		</div>
+	</div>
+	<!-- top-banner 结束       -->
+
+
+	<!-- search 开始       -->
+	<div class="search clearfix">
+		<div class="w">
+			<div class="search-left">
+				<a href="#"><img src="images/lable.jpg" alt="my icon"></a>
+			</div>
+			<div class="search-cen">
+				<input type="text" placeholder="&nbsp;商品" autofocus>
+				<input type="button" value="搜索">
+			</div>
+			<div class="search-right">
+				<a href="#"><p>我的购物车</p></a>
+				<span></span>
+				<i>&gt;</i>
+				<s>0</s>
+			</div>
+		</div>
+	</div>
+	<!-- container 结束       -->
+	
+	<!-- nav 开始       -->
+	<div class="nav clearfix">
+		<div class="w">
+			<div class="nav-left">
+				<p>welcome to my shop</p>
+			</div>
+			<div class="nav-cen">
+				<a href="#">首页</a>
+				<a href="#">我的订单</a>
+				<a href="#">我的购物车</a>
+			</div>
+		</div>
+	</div>
+	<!-- nav 结束       -->
+
+
+	<!-- container 开始     -->
+	
+	<div class="w clearfix">
+		<div class="container">
+			<div class="container-img">
+				<div class="container-img-img" id="oImg">
+					<a href="#"><img src="images/bo1.jpg" alt=""></a>
+					<a href="#"><img src="images/bo2.jpg" alt=""></a>
+					<a href="#"><img src="images/bo3.jpg" alt=""></a>
+					<a href="#"><img src="images/bo4.jpg" alt=""></a>
+				</div>
+				<div class="container-img-box" id="oLi">
+					<ul>
+						<li class="current">1</li>
+						<li>2</li>
+						<li>3</li>
+						<li>4</li>
+					</ul>
+				</div>
+				<div class="container-img-lr">
+					<span>&lt;</span>
+					<span>&gt;</span>
+				</div>
+			</div>
+			<div class="container-right">
+				<div class="container-right-news">
+					<span>站内快讯</span>
+					<p>Mall News</p>
+				</div>
+				<div class="container-right-box">
+
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- container 结束     -->
+
+
+	<!-- myPhone 结束       -->
+	<div class="w clearfix">
+		<div class="myPhone">
+			<div class="myPhone-icon">
+				<!--<p>MY PHONE</p>-->
+			</div>
+			<div class="myPhone-shop">
+				<div class="myPhone-shop-left i2">
+					<div class="myPhone-shop-top">
+					</div>
+				</div>
+				<div class="myPhone-shop-right i1">
+					<div class="myPhone-shop-top">
+					</div>
+				</div>
+			</div>
+			<div class="myPhone-shop">
+				<div class="myPhone-shop-left i3">
+					<div class="myPhone-shop-top">
+					</div>
+				</div>
+				<div class="myPhone-shop-right i4">
+					<div class="myPhone-shop-top">
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	
+	</div>
+	
+	<!-- myPhone 开始       -->
+
+
+	<!-- myIcon开始 -->
+	<div class="w">
+		<div class="myIcon">
+			<div class="myIcon-img"></div>
+			<div class="myIcon-img"></div>
+			<div class="myIcon-img"></div>
+			<div class="myIcon-img"></div>
+		</div>
+	</div>
+	
+	<!-- myIcon结束 -->
+	
+	<!-- footer        -->
+	<div class="footer">
+		<div class="w">
+			<ul class="aboutUs clearfix">
+				<li>关于我们</li>
+				<li>联系我们</li>
+				<li>联系客服</li>
+				<li>合作招商</li>
+				<li>商家帮助</li>
+				<li>营销中心</li>
+				<li>手机京东</li>
+				<li>友情链接</li>
+				<li>销售联盟</li>
+				<li>京东社区</li>
+				<li>风险监测</li>
+				<li>隐私政策</li>
+				<li>京东公益</li>
+				<li>English</li>
+				<li>Site</li>
+				<li>Contact Us</li>
+			</ul>
+			<ul class="id clearfix">
+				<li>京公网安备 11000002000088号</li>
+				<li>京ICP证070359号</li>
+				<li>互联网药品信息服务资格证编号(京)-经营性-2014-0008</li>
+				<li>新出发京零 字第大120007号</li>
+			</ul>
+			<ul class="phone clearfix">
+				<li>互联网出版许可证编号新出网证(京)字150号</li>
+				<li>出版物经营许可证</li>
+				<li>网络文化经营许可证京网文</li>
+				<li>[2014]2148-348号</li>
+				<li>违法和不良信息举报电话：4006561155</li>
+			</ul>
+		</div>
+	</div>
+	<!-- footer        -->
+
+	<!-- 小火箭 -->
+	<div class="upDowm" id="div1">
+		<img src="images/Top.jpg" alt="" id="img1">
+	</div>
+
+
+
+
+	<script>
+		var img1=document.getElementById("img1");
+		var div1=document.getElementById("div1");
+		window.onscroll=function(){
+			var scroHeight=scroll().top;
+			if(scroHeight>500){
+				img1.style.display="block";
+			}
+			else{
+				img1.style.display="none";
+			}
+			leader=scroll().top;
+			
+		}
+		var timer=null;
+		var point=0;
+		var leader=0;
+		img1.onclick=function(){
+			clearInterval(timer);
+			timer=setInterval(function(){
+				var step=(point-leader)/10;
+				step=step>0? Math.ceil(step) : Math.floor(step);
+				leader=leader+step;
+				window.scrollTo(0,leader);
+				if(leader===0){
+					clearInterval(timer);
+				}
+			},30);
+		}
+		function scroll(){
+			return {
+				"left" : window.pageXOffset || document.body.scrollLeft || document.documentElement.scrollLeft,
+				"top": window.pageYOffset || document.body.scrollTop || document.documentElement.scrollTop
+				}
+
+		}
+	
+	
+	</script>
+	
+</body>
+</html>
