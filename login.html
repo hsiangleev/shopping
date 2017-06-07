@@ -199,35 +199,17 @@
 		</ul>
 	</form>
 	
-<!-- <script>
-	var oInput=document.getElementsByTagName("input");
-	
-	
-	oInput[0].onfocus=function(){
-		if(this.value==="admin"){
-			this.value="";
-			this.style.color="#000";
-		}
-	}
-	oInput[1].onfocus=function(){
-		if(this.value==="123456"){
-			this.value="";
-			this.style.color="#000";
-		}
-	}
-	oInput[0].onblur=function(){
-		if(this.value===""){
-			this.value="admin";
-			this.style.color="#bbb";
-		}
-	}
-	oInput[1].onblur=function(){
-		if(this.value===""){
-			this.value="123456";
-			this.style.color="#bbb";
-		}
+<script>
+	var inp=document.getElementsByTagName("input");
+	inp[2].onclick=function () {
+		var name=inp[0].value;
+		var pwd=inp[1].value;
+		document.cookie="name="+name;
+		document.cookie="pwd="+pwd;
 	}
 	
-</script> -->
+	
+	
+</script>
 </body>
 </html>

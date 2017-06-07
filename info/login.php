@@ -17,7 +17,7 @@
 
 		// print_r($row);
 		if($row){
-			header("refresh:0;url='../index.html?name=$name'");
+			header("refresh:0;url='../index.html'");  //?name=$name
 		}else{
 			echo "<script>
 					alert('用户名或密码错误');history.back();

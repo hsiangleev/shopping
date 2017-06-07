@@ -8,27 +8,65 @@ $(function(){
 
 	//设置个人登录
 	var btn=$(".header-nav button");
-	//获取url地址
-	var local=location.search;
-	var arr=local.split("=");
-	var name=arr[1];
-	if(local!==""){
+	var cook=document.cookie;
+	
+	if(cook!=""){
+		var arr=cook.split(";");
+		var name=arr[0].split("=")[1];
+		var pwd=arr[1].split("=")[1];
+		console.log(name+pwd);
+
+
 		btn.eq(0).text(name+"欢迎您!!!");
 		btn.eq(0).parent("a").attr("href","javascript:void(0);")
 		btn.eq(1).text("退出登录");
-		btn.eq(1).parent("a").attr("href","javascript:void(0);")
+		btn.eq(1).parent("a").attr("href","javascript:void(0);");
 		btn.eq(1).on("click",function(){
 			btn.eq(0).text("登录");
 			btn.eq(0).parent("a").attr("href","login.html");
 			btn.eq(1).text("注册");
+			btn.eq(1).parent("a").attr("href","javascript:void(0);");
 			// btn.eq(1).parent("a").attr("href","register.html");
+			delAllCookie();
 		})
-	}else{
-		btn.eq(0).text("登录");
-		btn.eq(0).parent("a").attr("href","login.html");
-		btn.eq(1).text("注册");
-		btn.eq(1).parent("a").attr("href","register.html");
+		
 	}
+	//清除cookie
+	function delAllCookie(){    
+        var myDate=new Date();    
+        myDate.setTime(-1000);//设置时间    
+        var data=document.cookie;    
+        var dataArray=data.split("; ");    
+        for(var i=0;i<dataArray.length;i++){    
+             var varName=dataArray[i].split("=");    
+             document.cookie=varName[0]+"=''; expires="+myDate.toGMTString();    
+        }    
+                          
+    }          
+
+	// //设置个人登录
+	// var btn=$(".header-nav button");
+	// //获取url地址
+	// var local=location.search;
+	// var arr=local.split("=");
+	// var name=arr[1];
+	// if(local!==""){
+	// 	btn.eq(0).text(name+"欢迎您!!!");
+	// 	btn.eq(0).parent("a").attr("href","javascript:void(0);")
+	// 	btn.eq(1).text("退出登录");
+	// 	btn.eq(1).parent("a").attr("href","javascript:void(0);")
+	// 	btn.eq(1).on("click",function(){
+	// 		btn.eq(0).text("登录");
+	// 		btn.eq(0).parent("a").attr("href","login.html");
+	// 		btn.eq(1).text("注册");
+	// 		// btn.eq(1).parent("a").attr("href","register.html");
+	// 	})
+	// }else{
+	// 	btn.eq(0).text("登录");
+	// 	btn.eq(0).parent("a").attr("href","login.html");
+	// 	btn.eq(1).text("注册");
+	// 	btn.eq(1).parent("a").attr("href","register.html");
+	// }
 
 
 
