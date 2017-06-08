@@ -14,7 +14,7 @@ $(function(){
 		var arr=cook.split(";");
 		var name=arr[0].split("=")[1];
 		var pwd=arr[1].split("=")[1];
-		console.log(name+pwd);
+		// console.log(name+pwd);
 
 
 		btn.eq(0).text(name+"欢迎您!!!");

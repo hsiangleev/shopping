@@ -3,6 +3,42 @@
  */
 $(function () {
 	
+	// $con=$(".container .container-word");
+	//发送ajax请求
+	$.ajax({
+		url:"../info/info1.php",
+		type:"post",
+		dataType:"json",
+		success:function(data){
+			//获取a,b对应坐标
+
+			var k=location.search;
+			var arr=k.split("&");
+			var arr1=arr[0].split("=");
+			var a=arr1[1];
+			var arr2=arr[1].split("=");
+			var b=arr2[1];
+
+
+			// var str=location.href;
+			// var oArr=str.split("index1=");
+			// console.log(oArr);
+			// var ind=oArr[1]-1;
+			// console.log(ind);
+			// json字符窜转对象
+			var obj=$.parseJSON(data[a][b]);
+
+			console.log(obj);
+			
+			
+		}
+	});
+
+
+
+
+
+
 	
 	//设置个人登录
 	var btn=$(".header-nav button");

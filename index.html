@@ -126,7 +126,7 @@
 	<!-- container 结束     -->
 
 
-	<!-- myPhone 结束       -->
+	<!-- myPhone  开始     -->
 	<div class="w clearfix">
 		<div class="myPhone">
 			<div class="myPhone-icon">
@@ -135,20 +135,24 @@
 			<div class="myPhone-shop">
 				<div class="myPhone-shop-left i2">
 					<div class="myPhone-shop-top">
+						<p>苹果专区</p>
 					</div>
 				</div>
 				<div class="myPhone-shop-right i1">
 					<div class="myPhone-shop-top">
+						<p>华为专区</p>
 					</div>
 				</div>
 			</div>
 			<div class="myPhone-shop">
 				<div class="myPhone-shop-left i3">
 					<div class="myPhone-shop-top">
+						<p>oppo专区</p>
 					</div>
 				</div>
 				<div class="myPhone-shop-right i4">
 					<div class="myPhone-shop-top">
+						<p>小米专区</p>
 					</div>
 				</div>
 			</div>
@@ -157,7 +161,7 @@
 	
 	</div>
 	
-	<!-- myPhone 开始       -->
+	<!-- myPhone 结束       -->
 
 
 	<!-- myIcon开始 -->
@@ -221,6 +225,9 @@
 	<script>
 		var img1=document.getElementById("img1");
 		var div1=document.getElementById("div1");
+
+		//返回顶部小火箭
+		img1.style.display="none";
 		window.onscroll=function(){
 			var scroHeight=scroll().top;
 			if(scroHeight>500){

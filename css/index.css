@@ -283,8 +283,15 @@
 .myPhone .myPhone-shop-top{
 	width:100%;
 	height: 60px;
+	color: #a00;
+	font: 600 25px/60px "Microsoft Yahei";
 	background-color: #36A7A5;
 
+}
+.myPhone .myPhone-shop-top p{
+	color: #c5a;
+	text-align: center;
+	font: 600 25px/60px "Microsoft Yahei";
 }
 .myPhone .myPhone-shop-box{
 	border: 1px solid #ddd;

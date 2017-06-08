@@ -55,21 +55,17 @@ $(function () {
 			//添加购物车
 			var oBtn=$(".container .container-word-buy button");
 			oBtn.eq(1).on("click",function () {
-				// $.ajax({
-				// 	url: '../info/info3-car.php',
-				// 	type: 'post',
-				// 	dataType: 'json',
-				// 	data:obj,
-				// 	success:function (data) {
-						
-				// 	}
-				// })
-				// console.log(666);
-				// document.cookie="url="+obj.url;
-				// document.cookie="price="+obj.price;
-				// document.cookie="h1="+obj.h1;
-				// document.cookie="h2="+obj.h2;
-				window.open("car.html");
+				// window.location.href="../info/car.php"; 
+
+
+				$.ajax({
+					url:"../info/car.php",
+					type:"post",
+					data:"index1="+a+"&index2="+b,
+					success:function (data) {
+						console.log(data);
+					}
+				})
 				
 			})
 			

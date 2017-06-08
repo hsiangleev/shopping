@@ -35,6 +35,13 @@
 	// 				alert('用户名或密码不能为空');history.back();
 	// 		 </script>";
 	// }
+
+	// $index1=$_POST["index1"];
+	// echo $index1;
+
+
+
+
 	mysqli_close ($con);
 
 ?>

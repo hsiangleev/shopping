@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="../js/jquery-3.2.0.min.js"></script>
+	<script>
+		
+
+
+		// $(function () {
+
+		// 	$.ajax({
+		// 		url:"test.php",
+		// 		type:"post",
+		// 		data:"name=aaa",
+		// 		success:function (data) {
+		// 			console.log(data);
+		// 			// window.location.href="test.php"; 
+		// 		}
+		// 	})
+		// 	// $.post("test.php", { name: "John", time: "2pm" } );
+
+			var ajax=new XMLHttpRequest();
+			ajax.open("post","test.php");
+			ajax.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+			ajax.send("name=aaaaa");
+			ajax.onreadystatechange=function(){
+				if (ajax.readyState == 4 && ajax.status==200){
+					//console.log(this.responseText);
+					console.log(ajax.responseText);
+					window.location.href="test.php"; 
+				}
+			}
+		// })
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
