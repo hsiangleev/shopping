@@ -57,16 +57,23 @@ $(function () {
 			oBtn.eq(1).on("click",function () {
 				// window.location.href="../info/car.php"; 
 
-
-				$.ajax({
-					url:"../info/car.php",
-					type:"post",
-					data:"index1="+a+"&index2="+b,
-					success:function (data) {
-						console.log(data);
-					}
-				})
-				
+				var cook=document.cookie;
+				if(cook==""){
+					alert("您还尚未登录，请登录");
+				}else{
+					$.ajax({
+						url:"test.php",
+						type:"post",
+						data:"index1="+a+"&index2="+b,
+						success:function (data) {
+							alert("添加成功");
+							// window.location.href="test.php"; 
+						},
+						error:function (XMLHttpRequest, textStatus, errorThrown) {
+							console.log(errorThrown);
+						}
+					})
+				}
 			})
 			
 		}
@@ -93,6 +100,7 @@ $(function () {
 			btn.eq(1).parent("a").attr("href","javascript:void(0);");
 			// btn.eq(1).parent("a").attr("href","register.html");
 			delAllCookie();
+			history.go(0); 
 		})
 
 		
@@ -149,6 +157,13 @@ $(function () {
 	})
 
 
-
+	$(".nav-cen a").eq(2).click(function () {
+		var cook=document.cookie;
+		if(cook==""){
+			alert("您还尚未登录，请登录");
+		}else{
+			window.location.href="car.html"; 
+		}
+	})
 	
 });

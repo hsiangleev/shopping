@@ -6,6 +6,17 @@ $(function(){
 		 $span.slideUp(800);
 	})
 
+	//跳转
+	$(".nav-cen a").eq(2).click(function () {
+		var cook=document.cookie;
+		if(cook==""){
+			alert("您还尚未登录，请登录");
+		}else{
+			window.location.href="htm/car.html"; 
+		}
+	})
+
+
 	//设置个人登录
 	var btn=$(".header-nav button");
 	var cook=document.cookie;
@@ -28,6 +39,7 @@ $(function(){
 			btn.eq(1).parent("a").attr("href","javascript:void(0);");
 			// btn.eq(1).parent("a").attr("href","register.html");
 			delAllCookie();
+			history.go(0); 
 		})
 		
 	}
@@ -161,4 +173,7 @@ $(function(){
 			oLi.eq(num2).addClass("current").siblings("li").removeClass("current");
 		}
 	}
+
+
+
 });

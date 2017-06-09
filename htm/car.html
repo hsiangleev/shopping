@@ -6,7 +6,26 @@
 	<link rel="stylesheet" type="text/css" href="../css/base.css">
 	<link rel="stylesheet" type="text/css" href="../css/car.css">
 	<script src="../js/jquery-3.2.0.min.js"></script>
+	<script src="../js/template-native.js"></script>
 	<script src="../js/car.js"></script>
+	<script type="text/template" id="template">
+		
+			<div class="container-box">
+				<span class="img1">
+					<img src="<%=url%>" alt="">
+				</span>
+				<span class="text">
+					<p><%=h1%></p>
+				</span>
+				<span class="price">
+					<p><%=price%></p>
+				</span>
+				<span class="delete">
+					<button>删除</button>
+				</span>
+			</div>
+		
+	</script>
 	
 	
 </head>
@@ -55,7 +74,7 @@
 	
 	<!-- container 开始       -->
 	<div class="container w">
-		<div class="container-box">
+		<!-- <div class="container-box">
 			<span class="img1">
 				<img src="../images/iphone5s.jpg" alt="">
 			</span>
@@ -82,7 +101,7 @@
 			<span class="delete">
 				<button>删除</button>
 			</span>
-		</div>
+		</div> -->
 
 	</div>
 

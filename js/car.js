@@ -2,42 +2,36 @@
  * Created by Administrator on 2017/5/17.
  */
 $(function () {
-	
-	// $con=$(".container .container-word");
+	$con=$(".container .container-box");
 	//发送ajax请求
 	$.ajax({
-		url:"../info/info1.php",
+		url:"../info/myCar.php",
 		type:"post",
 		dataType:"json",
-		success:function(data){
-			//获取a,b对应坐标
+		success:function(data1){
 
-			var k=location.search;
-			var arr=k.split("&");
-			var arr1=arr[0].split("=");
-			var a=arr1[1];
-			var arr2=arr[1].split("=");
-			var b=arr2[1];
-
-
-			// var str=location.href;
-			// var oArr=str.split("index1=");
-			// console.log(oArr);
-			// var ind=oArr[1]-1;
-			// console.log(ind);
-			// json字符窜转对象
-			var obj=$.parseJSON(data[a][b]);
-
-			console.log(obj);
-			
-			
+			// console.log(data1);
+			//发送ajax请求
+			$.ajax({
+				url:"../info/info1.php",
+				type:"post",
+				dataType:"json",
+				success:function(data2){
+					for (var i = 0; i < data1.length; i++) {
+						var a=data1[i][0];
+						var b=data1[i][1];
+						var obj=$.parseJSON(data2[a][b]);
+						console.log(obj);
+						var result=template("template",obj);
+						$(".container").append(result);
+					}
+					
+					
+				}
+			});
+				
 		}
 	});
-
-
-
-
-
 
 	
 	//设置个人登录
@@ -61,6 +55,7 @@ $(function () {
 			btn.eq(1).parent("a").attr("href","javascript:void(0);");
 			// btn.eq(1).parent("a").attr("href","register.html");
 			delAllCookie();
+			history.go(0); 
 		})
 
 		
