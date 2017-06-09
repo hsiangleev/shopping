@@ -7,6 +7,14 @@ $(function(){
 	})
 
 	//跳转
+	$(".search-right a").eq(0).click(function () {
+		var cook=document.cookie;
+		if(cook==""){
+			alert("您还尚未登录，请登录");
+		}else{
+			window.location.href="htm/car.html"; 
+		}
+	})
 	$(".nav-cen a").eq(2).click(function () {
 		var cook=document.cookie;
 		if(cook==""){

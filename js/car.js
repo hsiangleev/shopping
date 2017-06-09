@@ -10,7 +10,7 @@ $(function () {
 		dataType:"json",
 		success:function(data1){
 
-			// console.log(data1);
+			// console.log(data1.length);
 			//发送ajax请求
 			$.ajax({
 				url:"../info/info1.php",
@@ -21,18 +21,41 @@ $(function () {
 						var a=data1[i][0];
 						var b=data1[i][1];
 						var obj=$.parseJSON(data2[a][b]);
-						console.log(obj);
+						// console.log(obj);
 						var result=template("template",obj);
 						$(".container").append(result);
+
+
+						//删除购物车
+						$(".container button").eq(i).on("click",function () {
+							$(this).parents(".container-box").hide(400);
+
+							var num=$(this).parents(".container-box").index();
+							var c=data1[num][0];
+							var d=data1[num][1];
+							console.log(c+""+d);
+							$.ajax({
+								url:"../info/deleteCar.php",
+								type:"post",
+								data:"index1="+c+"&index2="+d,
+								success:function (data) {
+									console.log(data);
+									// window.location.href="test.php"; 
+								},
+								error:function (XMLHttpRequest, textStatus, errorThrown) {
+									console.log(errorThrown);
+								}
+							})
+						})
+						
 					}
 					
-					
 				}
-			});
-				
+			});		
 		}
 	});
 
+	
 	
 	//设置个人登录
 	var btn=$(".header-nav button");

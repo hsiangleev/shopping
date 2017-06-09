@@ -62,7 +62,7 @@ $(function () {
 					alert("您还尚未登录，请登录");
 				}else{
 					$.ajax({
-						url:"test.php",
+						url:"../info/info2.php",
 						type:"post",
 						data:"index1="+a+"&index2="+b,
 						success:function (data) {
