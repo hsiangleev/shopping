@@ -24,11 +24,11 @@ $(function () {
 			// var oArr=str.split("index1=");
 			// console.log(oArr);
 			// var ind=oArr[1]-1;
-			// console.log(ind);
+			// console.log(data);
 			// json字符窜转对象
 			var obj=$.parseJSON(data[a][b]);
 
-			// console.log($.parseJSON(data[0][1]));
+			// console.log(obj);
 
 			$("#img1").attr("src",obj.url);
 			$("#img2").attr("src",obj.url);
@@ -67,6 +67,37 @@ $(function () {
 						data:"index1="+a+"&index2="+b,
 						success:function (data) {
 							alert("添加成功");
+							// window.location.href="test.php"; 
+						},
+						error:function (XMLHttpRequest, textStatus, errorThrown) {
+							console.log(errorThrown);
+						}
+					})
+				}
+			})
+
+			//订单购买
+			oBtn.eq(0).on("click",function () {
+				// window.location.href="../info/car.php"; 
+
+				var cook=document.cookie;
+				if(cook==""){
+					alert("您还尚未登录，请登录");
+				}else{
+					var cur=$(".container li.current");
+					var tex="";
+					for (var i = 0; i < cur.length; i++) {
+						var tex=tex+cur.eq(i).text()+",";
+					}
+					var num=$("#num").text();
+					tex+=num;
+					console.log(tex);
+					$.ajax({
+						url:"../info/orderAdd.php",
+						type:"post",
+						data:"content="+tex+"&index1="+a+"&index2="+b,
+						success:function (data) {
+							window.location.href="order.html";
 							// window.location.href="test.php"; 
 						},
 						error:function (XMLHttpRequest, textStatus, errorThrown) {

@@ -28,12 +28,12 @@ $(function () {
 
 						//删除购物车
 						$(".container button").eq(i).on("click",function () {
-							$(this).parents(".container-box").hide(400);
+							$(this).parents(".container-box").slideUp(800);
 
 							var num=$(this).parents(".container-box").index();
 							var c=data1[num][0];
 							var d=data1[num][1];
-							console.log(c+""+d);
+							// console.log(c+""+d);
 							$.ajax({
 								url:"../info/deleteCar.php",
 								type:"post",
