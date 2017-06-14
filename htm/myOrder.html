@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+	<link rel="stylesheet" type="text/css" href="../css/car.css">
+	<style>
+		.container .container-box .sty{
+			margin-top: 36px;
+		}
+		.container .container-box .sty p{
+			font: 600 16px/30px "Microsof Yahei";
+		}
+		.container-top{
+			font: 800 22px/30px "Microsof Yahei";
+		}
+
+	</style>
+	<script src="../js/jquery-3.2.0.min.js"></script>
+	<script src="../js/template-native.js"></script>
+	<script src="../js/myOrder.js"></script>
+	<script type="text/template" id="template">
+		<div class="container-box">
+			<span class="img1">
+				<img src="<%=url%>" alt="">
+			</span>
+			<span class="text">
+				<p><%=h1%></p>
+			</span>
+			<span class="price">
+				<p>￥<%=price%></p>
+			</span>
+			<!-- <span class="delete">
+				<button>删除</button>
+			</span> -->
+			<span class="sty">
+				<p><%=sty%></p>
+			</span>
+		</div>
+	</script>
+	
+	
+</head>
+<body>
+	
+	<!-- header-nav 开始       -->
+	<div class="header-nav clearfix">
+		<div class="w">
+			<div class="header-nav-left">
+				
+			</div>
+			<div class="header-nav-right">
+				<p>欢迎光临本店！</p>
+				<a href="../login.html"><button>登录</button></a>
+				<a href="../register.html"><button>注册</button></a>
+			</div>
+			
+		</div>
+	</div>
+	<!-- header-nav 结束       -->
+
+	<!-- top-banner 开始       -->
+	<div class="top-banner clearfix">
+		<div class="w">
+			<a href="#"><img src="../images/top-banner.jpg"></a>
+			<span></span>
+		</div>
+	</div>
+	<!-- top-banner 结束       -->
+
+	<!-- nav 开始       -->
+	<div class="nav clearfix">
+		<div class="w">
+			<div class="nav-left">
+				<p>welcome to my shop</p>
+			</div>
+			<div class="nav-cen">
+				<a href="../index.html">首页</a>
+				<a href="#">我的订单</a>
+				<a href="car.html">我的购物车</a>
+			</div>
+		</div>
+	</div>
+	<!-- nav 结束       -->
+
+	
+	<!-- container 开始       -->
+	<div class="container w">
+		<div class="container-top">
+			您已购买的商品：
+		</div>
+		<!-- <div class="container-box">
+			<span class="img1">
+				<img src="../images/iphone5s.jpg" alt="">
+			</span>
+			<span class="text">
+				<p>Apple/苹果 iPhone 6 4.7寸手机 苹果6 iphone6</p>
+			</span>
+			<span class="price">
+				<p>￥2250</p>
+			</span>
+			<span class="delete">
+				<button>删除</button>
+			</span>
+		</div>
+		<div class="container-box">
+			<span class="img1">
+				<img src="../images/iphone5s.jpg" alt="">
+			</span>
+			<span class="text">
+				<p>Apple/苹果 iPhone 6 4.7寸手机 苹果6 iphone6</p>
+			</span>
+			<span class="price">
+				<p>￥2250</p>
+			</span>
+			<span class="delete">
+				<button>删除</button>
+			</span>
+		</div> -->
+
+	</div>
+
+	<!-- container 结束       -->
+
+
+	<!-- footer        -->
+	<div class="footer">
+		<div class="w">
+			<ul class="aboutUs clearfix">
+				<li>关于我们</li>
+				<li>联系我们</li>
+				<li>联系客服</li>
+				<li>合作招商</li>
+				<li>商家帮助</li>
+				<li>营销中心</li>
+				<li>手机京东</li>
+				<li>友情链接</li>
+				<li>销售联盟</li>
+				<li>京东社区</li>
+				<li>风险监测</li>
+				<li>隐私政策</li>
+				<li>京东公益</li>
+				<li>English</li>
+				<li>Site</li>
+				<li>Contact Us</li>
+			</ul>
+			<ul class="id clearfix">
+				<li>京公网安备 11000002000088号</li>
+				<li>京ICP证070359号</li>
+				<li>互联网药品信息服务资格证编号(京)-经营性-2014-0008</li>
+				<li>新出发京零 字第大120007号</li>
+			</ul>
+			<ul class="phone clearfix">
+				<li>互联网出版许可证编号新出网证(京)字150号</li>
+				<li>出版物经营许可证</li>
+				<li>网络文化经营许可证京网文</li>
+				<li>[2014]2148-348号</li>
+				<li>违法和不良信息举报电话：4006561155</li>
+			</ul>
+		</div>
+	</div>
+	<!-- footer        -->
+
+
+</body>
+</html>

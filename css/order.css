@@ -1,0 +1,177 @@
+/* header-nav 开始  */
+body{
+	background-color: #fff;
+}
+.header-nav{
+	height: 32px;
+	line-height: 32px;
+	background: #f5f5f5;
+}
+.header-nav-left{
+	float: left;
+}
+.header-nav-right{
+	float: right;
+}
+.header-nav-right p{
+	display: inline-block;
+}
+.header-nav-right button{
+	height: 20px;
+	padding: 0 15px;
+	color: #fff;
+	cursor: pointer;
+}
+.header-nav-right button:nth-of-type(1){
+	background-image: linear-gradient(to bottom,#88cffa,#2da7f2);
+}
+.header-nav-right button:nth-of-type(2){
+	background-image: linear-gradient(to bottom,#ffb6bb,#ff586a);
+}
+	/* header-nav 结束  */
+
+
+	/* top-banner 开始  */
+.top-banner{
+	height: 81px;
+	width: 100%;
+	line-height: 81px;
+	background-color: #e84637;
+}
+.top-banner .w{
+	position: relative;
+}
+.top-banner .w img{
+	width: 100%;
+	height: 80px;
+}
+.top-banner span{
+	width: 19px;
+	height: 19px;
+	position: absolute;
+	top:0;
+	right: 0;
+	cursor: pointer;
+	background: url("../images/close-banner.png") no-repeat;
+}
+.top-banner span:hover{
+	background: url("../images/close-banner.png") no-repeat 0 -19px;
+}
+	/* top-banner 结束  */
+
+/* nav开始  */
+.nav{
+	margin-top: 50px;
+	border-bottom: 2px solid #c71521;
+	line-height: 46px;
+}
+
+.nav-left{
+	background: #c71521;
+	width: 235px;
+	height: 46px;
+	color: #f3f3f3;
+	text-align: center;
+	font: 500 20px/46px "Microsoft Yahei";
+	float: left;
+}
+.nav-cen a{
+	width: 150px;
+	height: 46px;
+	float: left;
+	text-align: center;
+	font: 600 18px/46px "microsoft yahei";
+}
+	/* nav 结束  */
+
+
+
+	/* container 开始  */
+.container{
+	margin: 50px auto;
+	width: 40%;
+}
+.container form{
+	width: 100%;
+	font: 400 18px/40px "Microsoft Yahei";
+}
+.container form label{
+	display: block;
+	margin: 20px 0;
+	width: 100%;
+	height: 40px;
+	border: 1px solid #ccc;
+}
+#last{
+	font-weight: bold;
+}
+#lastText{
+	/* display: block;
+	opacity: 0; */
+}
+.container form input{
+	padding-left: 20px;
+	font-size: 16px;
+}
+.container form input[type=submit]{
+	padding: 0;
+	background-color: #c00;
+	margin: 50px 0 0;
+	height: 40px;
+	width: 100%;
+	color: #fff;
+	font-size: 22px;
+	cursor: pointer;
+}
+
+	/* container 结束  */
+
+
+
+
+
+/* footer 开始  */
+.footer{
+	width: 100%;
+	height: 120px;
+	padding-top: 50px;
+	background-color: #eee;
+}
+.footer ul{
+	width: 100%;
+	box-sizing: border-box;
+	margin: 10px 0;
+}
+.footer ul li{
+	float: left;
+	font-size: 12px;
+	border-right: 1px solid #aaa;
+}
+.footer ul.aboutUs{
+	padding-left: 68px;
+}
+.footer ul.aboutUs li{
+	color: #666;
+	padding: 0 10px;
+}
+.footer ul.id{
+	padding-left: 216px;
+}
+.footer ul.id li{
+	color: #aaa;
+	padding: 0 10px;
+}
+.footer ul.phone{
+	padding-left: 172px;
+}
+.footer ul.phone li{
+	color: #aaa;
+	padding: 0 10px;
+}
+.footer ul li:last-child{
+	border-right: none;
+}
+
+
+
+	/* footer 结束  */
